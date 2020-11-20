@@ -1,0 +1,215 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.address {
+  font-style: normal;
+}
+
+/* =============== COMPONENTS ===============*/
+.modal-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+}
+
+.social-links__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  color: var(--accent-color);
+}
+
+.undertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.undertitle_light-theme {
+  color: #303030;
+}
+
+.undertitle_dark-theme {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.description_light-theme {
+  color: #555555;
+}
+
+.description_dark-theme {
+  color: #9da4bd;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.title_light-theme {
+  color: #303030;
+}
+
+.title_dark-theme {
+  color: #ffffff;
+}
+
+/* =============== END COMPONENTS ===============*/
+
+/* =============== HEADER ===============*/
+
+.navigation__list-link,
+.header__tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+.navigation__list-link:hover,
+.navigation__list-link:focus,
+.header__tel:hover,
+.header__tel:focus {
+  color: var(--accent-color);
+}
+
+/* =============== END HEADER ===============*/
+
+/* =============== HERO ===============*/
+
+.hero__title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+  /* color: #ffffff; */
+}
+
+/* =============== END HERO ===============*/
+
+/* =============== ABOUT ===============*/
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+/* =============== END ABOUT ===============*/
+
+/* =============== SERVICES ===============*/
+.services__list-item-name,
+.services__list-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* =============== END SERVICES ===============*/
+
+/* =============== ACHIEVMENTS ===============*/
+.achievments__list-item-counter {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.achievments__list-item-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  text-align: center;
+  color: #303030;
+}
+
+/* =============== END ACHIEVMENTS ===============*/
+
+/* =============== MASTERS ===============*/
+.masters__list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters__list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* =============== END MASTERS ===============*/
+
+/* =============== GALLERY ===============*/
+
+/* =============== END GALLERY ===============*/
+
+/* =============== CONTACT FORM ===============*/
+
+/* =============== END CONTACT FORM ===============*/
+
+/* =============== CONTACT INFORMATION ===============*/
+.contact-list__link,
+.contact-information__date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* =============== END CONTACT INFORMATION ===============*/
+
+/* =============== FOOTER ===============*/
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* =============== END FOOOTER ===============*/
+
+.current {
+  color: var(--accent-color);
+}
