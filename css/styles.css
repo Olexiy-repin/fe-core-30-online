@@ -8,18 +8,80 @@ body {
   font-family: var(--main-font);
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .address {
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* =============== COMPONENTS ===============*/
 .modal-btn {
+  min-width: 160px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 20px;
   /* color: #ffffff; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .social-links__link {
@@ -41,6 +103,7 @@ body {
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .undertitle_light-theme {
@@ -87,6 +150,37 @@ body {
 /* =============== END COMPONENTS ===============*/
 
 /* =============== HEADER ===============*/
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 70px;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .navigation__list-link,
 .header__tel {
@@ -107,6 +201,25 @@ body {
 /* =============== END HEADER ===============*/
 
 /* =============== HERO ===============*/
+.hero .container {
+  display: flex;
+}
+
+.hero__left-side {
+  width: 100px;
+}
+
+.hero .description {
+  width: 400px;
+}
+
+.hero__right-side {
+  background-color: #333;
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
 
 .hero__title {
   font-family: var(--secondary-font);
@@ -115,21 +228,76 @@ body {
   line-height: 1.181;
   letter-spacing: 0.05em;
   /* color: #ffffff; */
+  margin-bottom: 20px;
 }
 
 /* =============== END HERO ===============*/
 
 /* =============== ABOUT ===============*/
+.about .container {
+  display: flex;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .description {
+  margin-bottom: 20px;
+}
+
+.about__list {
+  display: flex;
+}
+
+.about__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__right-side {
+  padding-left: 64px;
+}
+
 .about__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 /* =============== END ABOUT ===============*/
 
 /* =============== SERVICES ===============*/
+.services .title {
+  margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services__list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services__list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #000;
+}
+
+.services__list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services__list-item-name,
 .services__list-item-price {
   font-weight: 400;
@@ -141,6 +309,49 @@ body {
 /* =============== END SERVICES ===============*/
 
 /* =============== ACHIEVMENTS ===============*/
+.achievments .container {
+  display: flex;
+}
+
+.achievments .title {
+  margin-bottom: 20px;
+}
+
+.achievments .description {
+  padding-right: 106px;
+}
+
+.achievments__left-side {
+  width: 470px;
+  flex-shrink: 0;
+  padding-left: 100px;
+}
+
+.achievments__right-side {
+  padding-left: 130px;
+}
+
+.achievments__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.achievments__list-item {
+  width: 170px;
+  min-height: 133px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.achievments__list-item:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+
+.achievments__list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .achievments__list-item-counter {
   font-weight: 700;
   font-size: 42px;
@@ -148,6 +359,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 6px;
 }
 
 .achievments__list-item-desc {
@@ -161,6 +373,21 @@ body {
 /* =============== END ACHIEVMENTS ===============*/
 
 /* =============== MASTERS ===============*/
+.masters .title {
+  margin-bottom: 44px;
+}
+
+.masters__list-content-wrapper {
+  padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.masters__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .masters__list-name {
   font-weight: 400;
   font-size: 18px;
@@ -168,6 +395,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .masters__list-position {
@@ -181,7 +409,14 @@ body {
 /* =============== END MASTERS ===============*/
 
 /* =============== GALLERY ===============*/
+.gallery .undertitle {
+  margin-bottom: 44px;
+}
 
+.gallery__list {
+  display: flex;
+  justify-content: space-between;
+}
 /* =============== END GALLERY ===============*/
 
 /* =============== CONTACT FORM ===============*/
@@ -201,6 +436,16 @@ body {
 /* =============== END CONTACT INFORMATION ===============*/
 
 /* =============== FOOTER ===============*/
+.footer {
+  padding: 56px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
@@ -209,7 +454,3 @@ body {
   color: #9da4bd;
 }
 /* =============== END FOOOTER ===============*/
-
-.current {
-  color: var(--accent-color);
-}
