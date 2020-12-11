@@ -68,6 +68,8 @@ img {
   cursor: pointer;
   padding: 12px 20px;
   color: #303030;
+
+  transition: all 250ms linear;
 }
 
 .modal-btn:hover,
@@ -78,6 +80,11 @@ img {
 
 .modal-btn_dark-theme {
   color: #fff;
+}
+
+.hero .social-links {
+  transform: rotate(-90deg) translateX(-18px);
+  transform-origin: left top;
 }
 
 .social-links {
@@ -108,6 +115,7 @@ img {
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-links__link:hover,
@@ -186,6 +194,8 @@ img {
 
 /* =============== HEADER ===============*/
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -197,6 +207,7 @@ img {
 
 .header .logo {
   margin-right: 70px;
+  animation-duration: 2000ms;
 }
 
 .header .address {
@@ -223,7 +234,9 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
-  /* color: #ffffff; */
+  color: #ffffff;
+
+  transition: color 250ms linear;
 }
 
 .navigation__list-link:hover,
@@ -241,6 +254,10 @@ img {
 }
 
 .hero__left-side {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 34px;
+  padding-bottom: 40px;
   width: 100px;
 }
 
@@ -379,11 +396,18 @@ img {
 
 .services__list-item {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
 }
 
 .services__list-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.services__list-item-underline {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin: 0 6px;
 }
 
 .services__list-item-name,
@@ -428,8 +452,8 @@ img {
 .achievments__list-item {
   width: 170px;
   min-height: 133px;
-  border: 1px solid #000;
   padding: 20px;
+  background-color: #f7f7f7;
 }
 
 .achievments__list-item:not(:nth-child(even)) {
@@ -441,13 +465,26 @@ img {
 }
 
 .achievments__list-item-counter {
+  position: relative;
+  width: max-content;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.357;
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin: 0 auto;
   margin-bottom: 6px;
+}
+
+.achievments__list-item-counter::after {
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-image: url("../images/achievments/plus.svg");
 }
 
 .achievments__list-item-desc {
@@ -513,6 +550,8 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
+
+  transition: background-color 250ms linear;
 }
 
 .social-list__link:hover,
@@ -528,6 +567,7 @@ img {
 .social-list__icon {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 /* =============== END MASTERS ===============*/
 
@@ -577,3 +617,56 @@ img {
   color: #9da4bd;
 }
 /* =============== END FOOOTER ===============*/
+
+/* =============== BACKDROP ===============*/
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: all 500ms linear;
+}
+
+.backdrop.is-hidden {
+  transition: all 500ms linear 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms linear 0ms;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+
+  transition: transform 500ms linear 500ms;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* =============== END BACKDROP ===============*/
