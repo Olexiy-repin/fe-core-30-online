@@ -306,7 +306,7 @@
         <!-- GALLERY -->
         <section class="gallery section">
             <div class="container">
-                <h2 hidden>галерея работ</h2>
+                <h2 class="visually-hidden">галерея работ</h2>
                 <p class="undertitle undertitle_light-theme">На латинском языке “барба” означает “борода”</p>
                 <ul class="gallery__list list">
                     <li class="gallery__list-item">
@@ -376,6 +376,32 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>X</button>
+            <form action="#" class="modal__form">
+                <label class="modal__form-field">
+                    Имя
+                    <span class="modal__form-input-wrapper">
+                        <input type="text" name="user_name" class="modal__form-input">
+                        <span class="modal__form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal__form-field">
+                    Телефон
+                    <span class="modal__form-input-wrapper">
+                        <input type="tel" name="user_tel" class="modal__form-input">
+                        <span class="modal__form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal__form-field">
+                    Комментарий
+                    <textarea class="modal__form-message" name="user_message" placeholder="Введите текст"></textarea>
+                </label>
+                <input id="user-policy" type="checkbox" name="user_policy" value="accept-policy"
+                    class="modal__form-policy visually-hidden">
+                <label for="user-policy" class="modal__form-policy-text">Соглашаюсь с рассылкой и принимаю <a
+                        href="#">Условия
+                        договора</a></label>
+                <button type="submit" class="modal__form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
