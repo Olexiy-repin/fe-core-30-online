@@ -1,0 +1,33 @@
+.undertitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+  }
+
+  &_light-theme {
+    color: #303030;
+
+    &::before {
+      background-color: #303030;
+    }
+  }
+
+  &_dark-theme {
+    color: rgba(157, 164, 189, 0.6);
+
+    &::before {
+      background-color: rgba(157, 164, 189, 0.6);
+    }
+  }
+}

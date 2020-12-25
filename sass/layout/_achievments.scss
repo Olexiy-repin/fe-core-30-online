@@ -1,0 +1,73 @@
+.achievments .container {
+  display: flex;
+}
+
+.achievments .title {
+  margin-bottom: 20px;
+}
+
+.achievments .description {
+  padding-right: 106px;
+}
+
+.achievments__left-side {
+  width: 470px;
+  flex-shrink: 0;
+  padding-left: 100px;
+}
+
+.achievments__right-side {
+  padding-left: 130px;
+}
+
+.achievments__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.achievments__list-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.achievments__list-item:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+
+.achievments__list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.achievments__list-item-counter {
+  position: relative;
+  width: max-content;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.achievments__list-item-counter::after {
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-image: url("../images/achievments/plus.svg");
+}
+
+.achievments__list-item-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  text-align: center;
+  color: #303030;
+}

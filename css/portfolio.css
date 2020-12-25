@@ -1,0 +1,109 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 70px;
+  animation-duration: 2000ms;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation__list-link,
+.header__tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+.navigation__list-link:hover,
+.navigation__list-link:focus,
+.header__tel:hover,
+.header__tel:focus {
+  color: #ff6c00;
+}
+/*# sourceMappingURL=portfolio.css.map */

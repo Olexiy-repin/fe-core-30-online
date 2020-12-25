@@ -1,0 +1,40 @@
+.hero .container {
+  display: flex;
+}
+
+.hero__left-side {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 34px;
+  padding-bottom: 40px;
+  width: 100px;
+}
+
+.hero .description {
+  width: 400px;
+}
+
+.hero__right-side {
+  background-color: #333;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+
+.hero__title {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
