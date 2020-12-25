@@ -330,27 +330,41 @@
         </section>
 
         <!-- CONTACT -->
-        <div>
+        <div class="contact">
             <!-- CONTACT FORM -->
             <section class="contact-form-section">
-                <h2 class="title">Онлайн-запись</h2>
+                <h2 class="title title title_dark-theme">Онлайн-запись</h2>
+                <form action="#" class="contact-form">
+                    <input type="text" name="user_name" class="contact-form__input" placeholder="Имя*" required>
+                    <input type="tel" name="user_phone" class="contact-form__input" placeholder="Телефон*" required>
+                    <textarea name="user_message" class="contact-form__message" placeholder="сообщение"></textarea>
+                    <button type="submit" class="contact-form__btn">отправить</button>
+                </form>
             </section>
 
             <!-- CONTACT INFORMATION -->
             <section class="contact-information">
-                <h2 class="title">Контакты</h2>
+                <h2 class="title title_dark-theme">Контакты</h2>
                 <address class="address">
-                    <ul class="contact-list">
+                    <ul class="contact-list list">
                         <li class="contact-list__item">
-                            <a class="contact-list__link" href="https://goo.gl/maps/fSdhoyAyDwtJdrEC6"
-                                target="_blank">ул. Васильковая, 7А Киев,
-                                08132</a>
+                            <a class="contact-list__link link" href="https://goo.gl/maps/fSdhoyAyDwtJdrEC6"
+                                target="_blank">
+                                <svg class="contact-list__icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#map-pin"></use>
+                                </svg> ул. Васильковая, 7А <br> Киев, 08132</a>
                         </li>
                         <li class="contact-list__item">
-                            <a class="contact-list__link" href="tel:+380441111111">+38 044 111 11 11</a>
+                            <a class="contact-list__link link" href="tel:+380441111111">
+                                <svg class="contact-list__icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#phone"></use>
+                                </svg> +38 044 111 11 11</a>
                         </li>
                         <li class="contact-list__item">
-                            <a class="contact-list__link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                            <a class="contact-list__link" href="mailto:barbershop@email.com">
+                                <svg class="contact-list__icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#mail "></use>
+                                </svg> barbershop@email.com</a>
                         </li>
                     </ul>
                 </address>
