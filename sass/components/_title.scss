@@ -1,8 +1,8 @@
 .title {
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   letter-spacing: 0.05em;
   color: #303030;
 
@@ -12,5 +12,12 @@
 
   &_dark-theme {
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.167;
   }
 }
